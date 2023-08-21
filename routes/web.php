@@ -20,4 +20,7 @@ Route::get("/",[FrontendController::class,"index"])->name("frontend.index");
 Route::get("/backend",[BackendController::class,"index"])->name("backend.index");
 
 //route for name
-Route::get('/' , [NameController::class , "index"])->name("name.index");
+
+
+//route for edit roles
+Route::get("/roles/edit",[BackendController::class,"roles"])->name("roles.edit");
